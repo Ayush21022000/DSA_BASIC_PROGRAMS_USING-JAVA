@@ -1,0 +1,15 @@
+package dataTypes;
+import java.util.Scanner;
+public class DiscountOnMrp70Percent {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int amount = sc.nextInt();
+		int discount = sc.nextInt();
+		int afterDiscountPrice=amount*discount/100;
+		System.out.println("THE AMOUNT TO BE DEDUCTED FROM MRP IS :"+afterDiscountPrice);
+		int newPrice = amount - afterDiscountPrice;
+		System.out.println("The NEw Price After Discount Is:"+newPrice);
+	}
+
+}
