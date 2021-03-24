@@ -1,0 +1,24 @@
+package dataTypes;
+import java.util.Scanner;
+
+public class ElseIfClass {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+	
+		int noOfPetals=sc.nextInt();
+		String name = sc.next();
+		System.out.println("What's Your Name ?\n"+name);
+
+		if(noOfPetals % 2==0) 
+		{
+			System.out.println("She LOves YOU !! "+name);
+		} 
+		else if (noOfPetals % 3 == 0 )
+		{
+			System.out.println("She Loves YOU A Lot !!"+name);
+		} 
+		else {
+			System.out.println("She Didn't Deserve You "  +  name );
+	}}
+}
